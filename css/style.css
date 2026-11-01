@@ -1,1 +1,131 @@
+.site-header img {
+    width: 100px;
+}
 
+
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: lightblue
+
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    
+}
+
+.primary-banner {
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.secondary-info {
+    background-color:lightgreen;
+    padding: 20px;
+
+}
+
+.cards-gallary {
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    min-height: 50vh;
+
+
+
+}
+
+.card {
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer {
+    background-color: lightgray;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+}
+
+@media (max-width:768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+    .cards-gallary {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        align-items: center;
+    }
+}
+
+.detail-hero {
+    background-color: cyan;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+    
+}
+
+.main-content {
+    background-color: greenyellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content img {
+    max-width: 100%;
+}
+
+.meta-data {
+    background-color: yellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
